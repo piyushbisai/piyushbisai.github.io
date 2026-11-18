@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<style>
+    body{
+
+        background-image: url("lpuuuu.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+         }
+    h1 {
+        padding:0;
+        margin:0;
+        background: none;
+        text-align: center;
+    }
+    h2 {
+        padding:0;
+        margin:5px;
+       
+        color: rgb(38, 4, 83);
+        text-align: center;
+    }
+    p {
+        color: rgb(196, 6, 6);
+        width:40px;
+        height:15px;
+
+    }
+    label{
+        color:blue;
+    }
+</style>
+<style>
+button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e633d;
+}
+</style>
+
+<body>
+    
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Tracker | Sustainable Living</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Eco Tracker</h1>
+    <hr>
+    <h4>Track your habits. Protect our planet.</h4>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <h2>My Sustainability Dashboard</h2>
+      <h5>Monitor your daily environmental impact.</h5>
+
+      <div class="cards">
+        <div class="card">
+          <h3>💧 Water Used</h3>
+          <p id="waterTotal">0 </p>
+        </div>
+
+        <div class="card">
+          <h3>⚡ Electricity Used</h3>
+          <p id="electricityTotal">0 </p>
+        </div>
+
+        <div class="card">
+          <h3>♻️ Waste Recycled</h3>
+          <p id="wasteTotal">0 </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="water" class="tracker">
+      <h2>💧 Water Tracker</h2>
+      <label for="waterInput">Daily water usage (litres):</label>
+      <input type="number" id="waterInput" min="0" placeholder="enter your value">
+      <button onclick="trackWater()">Save Water Usage</button>
+    </section>
+    <br><br>
+
+    <section id="electricity" class="tracker">
+      <h2>⚡ Electricity Tracker</h2>
+      <label for="electricityInput">Electricity usage (kWh):</label>
+      <input type="number" id="electricityInput" min="0" step="0.1" placeholder="enter your value">
+      <button onclick="trackElectricity()">Save Electricity Usage</button>
+    </section>
+    <br><br>
+
+    <section id="waste" class="tracker">
+      <h2>♻️ Waste Tracker</h2>
+      <label for="wasteInput">Recycled waste (kg):</label>
+      <input type="number" id="wasteInput" min="0" step="0.1" placeholder="enter your waste">
+      <button onclick="trackWaste()">Save Recycled Waste</button>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>🌎 Your Eco Report</h2>
+  <button onclick="showMessage()">
+      <button onclick="showReport()">Generate Report 🌱  </button>
+      
+    </section>
+  </main>
+<br>
+
+ <script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+    "Congratulations! 🎉 You are taking a step towards a sustainable future! 🌍";
+}
+</script> 
+
+
+</body>
+</html>

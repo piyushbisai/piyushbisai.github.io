@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dashboard </title>
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVIGATION BAR */
+.logo {
+    font-size: 35px;
+    white-space: nowrap;
+}
+header {
+    min-height: 76px;
+    padding: 15px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(greenleaf.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    font-size: 55px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    color: white;
+    font-family: georgia, 'Times New Roman', Times, serif;
+}
+.dashboard {
+    font-size: 50px;
+    background-color: #132a0f;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify
+    justify-content: center;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.card1logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #94d1f5;
+    text-align: center;
+} 
+.card1 {
+    font-size: 20px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #94d1f5;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+.card2logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f7d885;
+    text-align: center;
+}
+.card2 {
+    font-size: 20px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7d885;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+.card3logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #7cf564;
+    text-align: center;
+}
+.card3 {
+    font-size: 20px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7cf564;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+.card4logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ef4a4a;
+    text-align: center;
+}    
+.card4 {
+    font-size: 18px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ef4a4a;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+.card-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.card5logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4d85ff;
+    text-align: center;
+}
+.card5 {
+    font-size: 22px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4d85ff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+.card6logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #47ea2a;
+    text-align: center;
+}
+.card6 {
+    font-size: 20px;
+    width: 350px;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #47ea2a;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 8px
+}
+main {
+    min-height: calc(100vh - 76px);
+    padding: 60px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(
+            90deg,
+            rgba(6, 24, 8, 0.85),
+            rgba(6, 24, 8, 0.3)
+        ),
+    url(greenforest.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+    <header>
+        <nav class="logo">
+            <span class="logo icon">🌿</span>
+        </nav>
+        <h1>Dashboard</h1>
+        <p>Live Green. Live Better</p>
+    </header>
+    <main>
+     <div class="card-container">
+        <div class="card1">
+            <span class="card1logo">💧</span>
+            <h2>Water Usage Tracker</h2>
+        </div>
+        <div class="card2">
+            <span class="card2logo">⚡</span>
+            <h2>Energy Consumption</h2>
+        </div>
+        <div class="card3">
+            <span class="card3logo">♻️</span>
+            <h2>Waste Management</h2>
+        </div>
+     </div>
+     <div class="card-container2">
+        <div class="card4">
+            <span class="card4logo">📊</span>
+            <h2>Weekly Progress Chart</h2>
+        </div>
+        <div class="card5">
+            <span class="card5logo">🌍</span>
+            <h2>Carbon Footprint</h2>
+        </div>
+        <div class="card6">
+            <span class="card6logo">✅</span>
+            <h2>Daily Green Goals</h2>
+        </div>
+    </div>
+    </main>
+</html>

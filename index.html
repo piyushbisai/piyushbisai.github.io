@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name=""viewport content="width=device-width, initial-scale=1.0">
+    <title>Sustainble Living Tracker</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+      }
+      body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(230, 234, 238);
+        color:rgb(9, 199, 9);
+
+      }
+      header{
+        background-color: #176b45;
+        color: white;
+        padding:20px;
+        text-align: center;
+      }
+      .logo{
+        font-size: 40px;
+      }
+      header h1{
+        margin: 8px;
+      }
+      nav {
+        background:#104d32 ;
+        padding:12px;
+        text-align: center;
+      }
+
+      nav a {
+        color:white;
+        text-decoration: none;
+        margin: 12px;
+        font-weight: bold;
+      }
+
+      .hero{
+        text-align: center;
+        padding: 45px 20px;
+        background: #d9f2df;
+      }
+      .hero h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      .hero p{
+        margin-bottom: 20px;
+      }
+
+      button{
+          background: #218653;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+      }
+      button:hover{
+        background:white;
+
+      }
+
+      .container{
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 15px;
+      }
+
+      .cards{
+        display:grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(200px, 1fr)
+        );
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .card{
+        background: white;
+        padding: 25px 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 3px 10px #00000012;
+
+      }
+
+      .card .icon {
+        font-size: 35px;
+      }
+
+      .card h3 {
+        margin: 12px 0;
+      }
+
+      .card p {
+        font-size: 22px;
+        color: #218653;
+        font-weight: bold;
+      }
+
+      .tracker {
+          background: white;
+          padding: 25px;
+          margin-top: 30px;
+          border-radius: 12px;
+          box-shadow: 0 3px 10px #00000012;
+      
+      .tracker h2{
+        margin-bottom: 20px;
+
+      }
+
+      label{
+        display:block;
+        margin:15px 0 7px;
+        font-weight: bold;
+      }
+
+      input, select{
+        width:100%;
+        padding:11px;
+        border: 1px solid #b7cdbb;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+      
+      .tracker button{
+        margin-top: 20px;
+      }
+      
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e4f5e8;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        footer {
+            margin-top: 35px;
+            padding: 20px;
+            background: #176b45;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌿
+      </div>
+      <h1> 🌍 Eco Track</h1>
+      <h4>SUSTAINBLE LIVING TRACKER</h4>
+      </header>
+      
+      <nav> 
+         <a href="home.html">Home</a>
+         <a href="dashboared.html">Dashboared</a>
+         <a href="tracker.html">Tracker</a>
+         
+        </nav>
+
+        <section class="hero" id="home">
+          <h2>Live Green, Live Clean</h2>
+          <h5>
+            Track your daily habits and help to protect our beautiful planet.</h5>
+            
+          
+          </section>
+          <section>
+            <div class = "register-prompt">Do You have already an account?
+              <br>
+              if you want then click on Home also.
+              <a href="home.html">Login here</a>
+              </div>
+            </section>
+            <br>
+            <br>
+            <section>
+            <div class="register-prompt">Do You want to track your daily habits?
+              <br>
+              If you want then click on Tracker also.
+              <a href="tracker.html">Track Your Eco report</a></div>
+              </section>
+      </body>
+      
+</html>
